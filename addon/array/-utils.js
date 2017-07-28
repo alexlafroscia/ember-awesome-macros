@@ -7,7 +7,7 @@ import createClassComputed from 'ember-macro-helpers/create-class-computed';
 const sentinelValue = {};
 
 function normalizeArrayArgs(keys) {
-  keys[0] = normalizeArrayKey(keys[0]);
+  keys[0] = normalizeArrayKey(...keys);
 }
 
 function getDefaultValue(func, identityVal) {
